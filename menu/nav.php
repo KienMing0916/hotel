@@ -25,7 +25,7 @@
                     <a class="nav-link" href="bookingform.php">Book Now</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="location.php" href="#">Location</a>
+                    <a class="nav-link" href="contact.php" href="#">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="company-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

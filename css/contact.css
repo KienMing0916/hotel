@@ -1,3 +1,72 @@
+.parttwomap{
+    display: inline-block;
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #112D4E;
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+}
+
+.contactform {
+    text-align: center;
+    border-radius: 10px;
+    border: black solid 2px;
+    padding: 2rem;
+    background-color: #DBE2EF;
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.contactform h3{
+    padding-bottom: 1rem;
+}
+
+.rowemail, .rowsubject, .rowmessage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#email{
+    width: 100%;
+    height: 45px;
+}
+
+#subject{
+    width: 100%;
+    height: 45px;
+}
+
+#message{
+    width: 100%;
+}
+
+.buttonsend{
+    color: white;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: #204e51;
+    cursor:pointer;
+    margin-top: 1rem;
+}
+
+.buttonsend:hover{
+    background-image:linear-gradient(to right, #76a4a1, #0d7567);  
+}
+
 .flipbox{
     box-sizing: border-box;
     border: double black 5px;
@@ -6,10 +75,6 @@
     background-color: black;
     width: 400px;
     height: 200px;
-}
-
-.card {
-    width: 400px;
 }
 
 .longflip{
@@ -73,9 +138,6 @@
         width: 350px;
     }
 
-    .card {
-        width: 350px;
-    }
 }
 
 @media screen and (max-width:768px) {
@@ -97,9 +159,6 @@
         font-size: 20px;
     }
 
-    .card {
-        width: 300px;
-    }
 }
 
 
@@ -111,6 +170,10 @@
     .flipbox img{
         width: 60px;
     }
+
+    .contactform{
+        width: 350px;
+    }
 }
 
 @media screen and (max-width:440px) {
@@ -121,5 +184,8 @@
     .flipbox-front h5, .flipbox-back h5{
         font-size: 16px;
     }
-}
 
+    .contactform{
+        width: 320px;
+    }
+}

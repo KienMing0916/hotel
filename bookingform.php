@@ -9,7 +9,6 @@
     <link href="css/bookingform.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c3573e9c36.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="img/factorylogo.png">
 </head>
 
 <body>

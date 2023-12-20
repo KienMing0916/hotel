@@ -28,7 +28,7 @@
                     <p><a href="room.php" class="text-white">Accommodations</a></p>
                     <p><a href="facility.php" class="text-white">Amenities</a></p>
                     <p><a href="bookingform.php" class="text-white">Book Now</a></p>
-                    <p><a href="location.php" class="text-white">Location</a></p>
+                    <p><a href="contact.php" class="text-white">Contact</a></p>
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

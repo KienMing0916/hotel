@@ -9,7 +9,6 @@
     <link href="css/index.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c3573e9c36.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="img/factorylogo.png">
 </head>
 
 <body>
@@ -39,7 +38,7 @@
         </div>
         <!-- title and introduction -->
         <div class="title">
-            <h1 class="text-white my-4 px-5 d-flex justify-content-center text-center"><i>Welcome to Celestial Oasis Hotel</i></h1>
+            <h1 class="text-white pt-5 pb-4 px-5 d-flex justify-content-center text-center"><i>Welcome to Celestial Oasis Hotel</i></h1>
             <p class="text-white my-4 px-5">Escape to Celestial Oasis Hotel, a haven in Malaysia where luxury and tranquility unite. Our meticulously designed rooms and suites offer a blend of comfort and sophistication, ensuring an extraordinary stay. Immerse yourself in celestial experiences, from dining in our exquisite restaurants to indulging in our swimming pool and gym room. Whether for business or leisure, discover a sanctuary where every moment is a journey beyond the ordinary.</p>
         </div>
         <!-- partthree room type -->
@@ -74,8 +73,8 @@
         </div>
         <!-- partfivecontact -->
         <h1 class="text-white my-4 d-flex justify-content-center"><i>Contact Us</i></h1>
-        <div class="rowforflip d-flex flex-wrap justify-content-center">
-            <div class="flipbox m-3 mb-5 p-0">
+        <div class="rowforflip d-flex flex-wrap justify-content-center pb-4">
+            <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
                         <img src="img/call.png" alt="" width="80px">
@@ -90,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="flipbox m-3 mb-5 p-0">
+            <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
                         <img src="img/email.png" alt="" width="80px">
@@ -105,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="flipbox m-3 mb-5 p-0">
+            <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
                         <img src="img/location.png" alt="" width="80px">
@@ -137,7 +136,6 @@
     </div> -->
 
     <?php include 'menu/footer.php'; ?>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
