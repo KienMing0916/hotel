@@ -17,6 +17,11 @@
     height: 100%;
 }
 
+.servicebox:hover {
+    background-color: rgb(204, 204, 204);
+    color: #000; /* Change to your desired text color on hover */
+}
+
 .amenitiesDescription{
     display: flex;
     flex-direction: column;

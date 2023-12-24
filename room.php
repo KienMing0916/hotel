@@ -38,7 +38,7 @@
                     <div class="col-xl-4 col-md-6 wow fadeInUp px-4" data-wow-delay="0.1s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/room1.jpg" alt="">
+                                <img class="img-fluid" src="img/standardroom1.jpg" alt="">
                                 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">RM 269 /Night</small>
                             </div>
                             <div class="p-4 mt-2" style="background-color: white;">
@@ -54,7 +54,7 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Bed</small>
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Enjoy a cozy and budget-friendly retreat in our standard rooms, providing essential amenities for a comfortable and memorable stay experience.</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#" data-toggle="modal" data-target="#myStandardRoomModal">View Details</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="bookingform.php">Book Now</a>
@@ -74,30 +74,48 @@
                                             <!-- Modal Body -->
                                             <div class="modal-body">
                                                 <!-- Carousel -->
-                                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="img/hotel1.jpg" class="d-block w-100" alt="Image 1">
+                                                            <img src="img/standardroom1.jpg" class="d-block w-100" alt="Image 1">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="img/hotel2.jpg" class="d-block w-100" alt="Image 2">
+                                                            <img src="img/standardroom2.jpg" class="d-block w-100" alt="Image 2">
                                                         </div>
-                                                        <!-- Add more slides as needed -->
+                                                        <div class="carousel-item">
+                                                            <img src="img/standardroom3.jpg" class="d-block w-100" alt="Image 3">
+                                                        </div>
                                                     </div>
-                                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                                    <a class="carousel-control-prev" href="#myCarousel1" role="button" data-slide="prev">
                                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Previous</span>
                                                     </a>
-                                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                                    <a class="carousel-control-next" href="#myCarousel1" role="button" data-slide="next">
                                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Next</span>
                                                     </a>
                                                 </div>
                                                 <!-- Text at the Bottom -->
                                                 <div class="mt-3">
-                                                    <p>This is some text description the bottom of the modal.</p>
+                                                    <p>A comfortable and budget-friendly option for both business and leisure travelers.</p>
+                                                    <h5><b>Basic facilities:</b></h5>
+                                                    <ul>
+                                                        <li>Queen-sized bed</li>
+                                                        <li>Private bathroom with shower</li>
+                                                        <li>Work desk</li>
+                                                        <li>Flat-screen TV with cable channels</li>
+                                                        <li>Air conditioning</li>
+                                                        <li>In-room safe</li>
+                                                    </ul>
+                                                    <h5><b>Amenities:</b></h5>
+                                                    <ul>
+                                                        <li>Complimentary Wi-Fi</li>
+                                                        <li>Daily housekeeping</li>
+                                                        <li>Coffee/tea maker</li>
+                                                        <li>Hairdryer</li>
+                                                        <li>Iron and ironing board</li>
+                                                    </ul>
                                                 </div>
-
                                             </div>
                                             <!-- Modal Footer -->
                                             <div class="modal-footer">
@@ -115,7 +133,7 @@
                     <div class="col-xl-4 col-md-6 wow fadeInUp px-4" data-wow-delay="0.3s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/room2.jpg" alt="">
+                                <img class="img-fluid" src="img/deluxesuite1.jpg" alt="">
                                 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">RM 389 /Night</small>
                             </div>
                             <div class="p-4 mt-2" style="background-color: white;">
@@ -132,7 +150,7 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Experience luxury and spacious elegance in our deluxe suites, featuring modern furnishings and exquisite design for heightened comfort and style.</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#" data-toggle="modal" data-target="#myDeluxeSuiteModal">View Details</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="bookingform.php">Book Now</a>
@@ -152,30 +170,51 @@
                                             <!-- Modal Body -->
                                             <div class="modal-body">
                                                 <!-- Carousel -->
-                                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="img/hotel1.jpg" class="d-block w-100" alt="Image 1">
+                                                            <img src="img/deluxesuite1.jpg" class="d-block w-100" alt="Image 1">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="img/hotel2.jpg" class="d-block w-100" alt="Image 2">
+                                                            <img src="img/deluxesuite2.jpg" class="d-block w-100" alt="Image 2">
                                                         </div>
-                                                        <!-- Add more slides as needed -->
+                                                        <div class="carousel-item">
+                                                            <img src="img/deluxesuite3.jpg" class="d-block w-100" alt="Image 3">
+                                                        </div>
                                                     </div>
-                                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                                    <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
                                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Previous</span>
                                                     </a>
-                                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                                    <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
                                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Next</span>
                                                     </a>
                                                 </div>
                                                 <!-- Text at the Bottom -->
                                                 <div class="mt-3">
-                                                    <p>This is some text description the bottom of the modal.</p>
+                                                    <p>A spacious and elegant suite designed for a more luxurious stay.</p>
+                                                    <h5><b>Basic facilities:</b></h5>
+                                                    <ul>
+                                                        <li>King-sized bed</li>
+                                                        <li>Separate living area</li>
+                                                        <li>Private bathroom with shower</li>
+                                                        <li>Flat-screen TV with cable channels</li>
+                                                        <li>Air conditioning</li>
+                                                        <li>In-room safe</li>
+                                                        <li>Work desk</li>
+                                                        <li>Robes and slippers</li>
+                                                        <li>Balcony with city view</li>
+                                                    </ul>
+                                                    <h5><b>Amenities:</b></h5>
+                                                    <ul>
+                                                        <li>High-speed Wi-Fi</li>
+                                                        <li>Daily turndown service</li>
+                                                        <li>Premium bath amenities</li>
+                                                        <li>Nespresso coffee machine</li>
+                                                        <li>24-hour room service</li>
+                                                    </ul>
                                                 </div>
-
                                             </div>
                                             <!-- Modal Footer -->
                                             <div class="modal-footer">
@@ -193,7 +232,7 @@
                     <div class="col-xl-4 col-md-6 wow fadeInUp px-4" data-wow-delay="0.6s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/room3.jpg" alt="">
+                                <img class="img-fluid" src="img/executivehouse1.jpg" alt="">
                                 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">RM 599 /Night</small>
                             </div>
                             <div class="p-4 mt-2" style="background-color: white;">
@@ -212,7 +251,7 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                     <small><i class="fa fa-cutlery text-primary me-2"></i>1 Kitchen</small>
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Indulge in opulence with panoramic views in our executive penthouse, offering an exclusive and lavish retreat for the discerning traveler.</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#" data-toggle="modal" data-target="#myExecutivepenthouseModal">View Details</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="bookingform.php">Book Now</a>
@@ -232,30 +271,53 @@
                                             <!-- Modal Body -->
                                             <div class="modal-body">
                                                 <!-- Carousel -->
-                                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="img/hotel1.jpg" class="d-block w-100" alt="Image 1">
+                                                            <img src="img/executivehouse1.jpg" class="d-block w-100" alt="Image 1">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="img/hotel2.jpg" class="d-block w-100" alt="Image 2">
+                                                            <img src="img/executivehouse2.jpg" class="d-block w-100" alt="Image 2">
                                                         </div>
-                                                        <!-- Add more slides as needed -->
+                                                        <div class="carousel-item">
+                                                            <img src="img/executivehouse3.jpg" class="d-block w-100" alt="Image 3">
+                                                        </div>
                                                     </div>
-                                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                                    <a class="carousel-control-prev" href="#myCarousel3" role="button" data-slide="prev">
                                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Previous</span>
                                                     </a>
-                                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                                    <a class="carousel-control-next" href="#myCarousel3" role="button" data-slide="next">
                                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Next</span>
                                                     </a>
                                                 </div>
                                                 <!-- Text at the Bottom -->
                                                 <div class="mt-3">
-                                                    <p>This is some text description the bottom of the modal.</p>
+                                                    <p>The epitome of luxury, offering a premium and exclusive experience.</p>
+                                                    <h5><b>Basic facilities:</b></h5>
+                                                    <ul>
+                                                        <li>Master bedroom with a king-sized bed</li>
+                                                        <li>Spacious living and dining area</li>
+                                                        <li>En-suite bathroom with bathtub</li>
+                                                        <li>Private kitchenette</li>
+                                                        <li>Jacuzzi tub with panoramic views</li>
+                                                        <li>Flat-screen TV with cable channels</li>
+                                                        <li>Personalized concierge service</li>
+                                                        <li>Private elevator access</li>
+                                                        <li>Air conditioning</li>
+                                                        <li>Robes and slippers</li>
+                                                        <li>Balcony with city view</li>
+                                                    </ul>
+                                                    <h5><b>Amenities:</b></h5>
+                                                    <ul>
+                                                        <li>Ultra-fast Wi-Fi</li>
+                                                        <li>Exclusive access to executive lounge</li>
+                                                        <li>Butler service</li>
+                                                        <li>Complimentary airport transfers</li>
+                                                        <li>In-room entertainment system with surround sound</li>
+                                                    </ul>
                                                 </div>
-
                                             </div>
                                             <!-- Modal Footer -->
                                             <div class="modal-footer">
@@ -273,15 +335,6 @@
             </div>
         </div>
         <!-- Room End -->
-
-
-
-
-
-
-
-
-
     </div>
 
 

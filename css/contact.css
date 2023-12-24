@@ -69,7 +69,7 @@
 
 .flipbox{
     box-sizing: border-box;
-    border: double black 5px;
+    border: double black 2px;
     text-align: justify;
     position: relative;
     background-color: black;

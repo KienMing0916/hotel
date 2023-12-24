@@ -1,11 +1,13 @@
-#subtitle{
+#subtitle, .amenitiestitle {
     text-align: justify;
     text-justify: inter-word;
 }
 
-.flipbox{
+
+
+.flipbox {
     box-sizing: border-box;
-    border: double black 5px;
+    border: double black 2px;
     text-align: justify;
     position: relative;
     background-color: black;
@@ -17,60 +19,87 @@
     width: 27%;
 }
 
-.longflip{
+.longflip {
     width: 400px;
     height: 350px;
 }
 
 .flipbox-inner {
-  position: relative;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
 }
 
 .flipbox:hover .flipbox-inner {
     transform: rotateY(180deg);
 }
-  
-.flipbox-front, .flipbox-back {
+
+.flipbox-front,
+.flipbox-back {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     width: 100%;
     height: 100%;
 }
-  
+
 .flipbox-front {
     background-color: #D0E7D2;
     color: black;
 }
-  
+
 .flipbox-back {
     background-color: #222831;
     color: white;
     transform: rotateY(180deg);
 }
 
-.flipbox-front h5{
+.flipbox-front h5 {
     color: black;
     text-align: center;
     margin-top: 1.5vw;
     padding: 0 2vw;
 }
 
-.flipbox-back h5{
+.flipbox-back h5 {
     padding: 0 2vw;
     color: white;
     font-size: 22px;
 }
 
-.flipbox p{
+.flipbox p {
     color: white;
     text-align: center;
     margin-top: 1.5vw;
     padding: 0 2vw;
+}
+
+#amenitiesdiv{
+    width: 100%;
+    margin: auto;
+}
+
+
+@media screen and (max-width:1200.98px) {
+    #amenities2 {
+        order: 1;
+        position: relative;
+        left: -5%;
+    }
+
+    #amenities1 {
+        order: 2;
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+
+    .amenitiestitle{
+        padding: 0 !important;
+        left: 5%;
+        
+    }
 }
 
 @media screen and (max-width:865.98px) {
@@ -84,21 +113,22 @@
 }
 
 @media screen and (max-width:780px) {
-    .flipbox{
+    .flipbox {
         width: 300px;
         height: 150px;
     }
 
-    .longflip{
+    .longflip {
         width: 300px;
         height: 350px;
     }
 
-    .flipbox img{
+    .flipbox img {
         width: 40px;
     }
 
-    .flipbox-front h5, .flipbox-back h5{
+    .flipbox-front h5,
+    .flipbox-back h5 {
         font-size: 20px;
     }
 
@@ -107,13 +137,29 @@
     }
 }
 
+@media screen and (max-width:576px) {
+
+    #box1,
+    #box2,
+    #box3 {
+        width: 70%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .amenitiestitle{
+        width: 80%;
+        margin: auto;
+    }
+}
+
 
 @media screen and (max-width:526px) {
-    .flipbox-back p{
+    .flipbox-back p {
         font-size: 14px;
     }
 
-    .flipbox img{
+    .flipbox img {
         width: 45px;
     }
 
@@ -123,11 +169,12 @@
 }
 
 @media screen and (max-width:440px) {
-    .flipbox-back{
+    .flipbox-back {
         font-size: 12px;
     }
 
-    .flipbox-front h5, .flipbox-back h5{
+    .flipbox-front h5,
+    .flipbox-back h5 {
         font-size: 16px;
     }
 
@@ -135,4 +182,3 @@
         width: 75%;
     }
 }
-

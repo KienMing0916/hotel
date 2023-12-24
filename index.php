@@ -41,11 +41,11 @@
             <h1 class="text-white pt-5 pb-0 px-5 d-flex justify-content-center text-center">Welcome to Celestial Oasis Hotel</h1>
             <p class="text-white my-4 pb-4 px-5" id="subtitle">Escape to Celestial Oasis Hotel, a haven in Malaysia where luxury and tranquility unite. Our meticulously designed rooms and suites offer a blend of comfort and sophistication, ensuring an extraordinary stay. Immerse yourself in celestial experiences, from dining in our exquisite restaurants to indulging in our swimming pool and gym room. Whether for business or leisure, discover a sanctuary where every moment is a journey beyond the ordinary.</p>
         </div>
-        <!-- partthree room type -->
-        <h1 class="text-white my-4 d-flex justify-content-center">Room Types</h1>
+        <!-- partworoomtype -->
+        <h1 class="text-white my-5 d-flex justify-content-center">Room Types</h1>
         <div class="d-flex flex-wrap justify-content-center mb-5">
             <div class="card m-3">
-                <img class="card-img-top" src="img/room1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/standardroom1.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Standard Room</h5>
                     <p class="card-text">Comfortable queen-size bed, ensuite bathroom, and workspace. Enjoy modern amenities like a flat-screen TV, high-speed Wi-Fi, and a coffee maker. Ideal for business and leisure travelers.</p>
@@ -54,7 +54,7 @@
             </div>
 
             <div class="card m-3">
-                <img class="card-img-top" src="img/room2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/deluxesuite1.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Deluxe Suite</h5>
                     <p class="card-text">Luxurious king-size bed, separate living area, and a private balcony with stunning views. Pamper yourself in the lavish bathroom, enjoy a minibar, smart TV, and room service.</p>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="card m-3">
-                <img class="card-img-top" src="img/room3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/executivehouse1.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Executive Penthouse</h5>
                     <p class="card-text">Ultimate luxury with a California king-size bed, spacious living, fully equipped kitchenette, and a private rooftop terrace. Private spa with Jacuzzi and dedicated concierge service.</p>
@@ -71,7 +71,113 @@
                 </div>
             </div>
         </div>
-        <!-- partfivecontact -->
+        <!-- partthreeamenities -->
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container" id="amenitiesdiv">
+                <div class="row g-6 align-items-center">
+                    <div class="amenitiestitle px-3">
+                        <h6 class="section-title text-start text-white text-uppercase">About Us</h6>
+                        <h1 class="m-0 text-white">Explore Our <span class="text-white text-uppercase">Amenities</span></h1>
+                        <p class="my-3 text-white">Experience luxury and comfort with our hotel facilities - treat yourself to fine dining, relax in the gym and enjoy unparalleled service.</p>
+                    </div>
+                    <div class="col-xl-6 px-3" id="amenities1">
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4 wow fadeIn text-white" id="box1" data-wow-delay="0.1s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">100+</h2>
+                                        <p class="mb-0">Rooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn text-white" id="box2" data-wow-delay="0.3s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">200+</h2>
+                                        <p class="mb-0">Staffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn text-white" id="box3" data-wow-delay="0.5s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-gear fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">10+</h2>
+                                        <p class="mb-0">Amenities</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="facility.php">Explore More</a>
+                    </div>
+                    <div class="col-xl-6" id="amenities2">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/hotel1.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/swimmingpool.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/restaurant.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/gymroom.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- partfourcontact -->
         <h1 class="text-white my-4 d-flex justify-content-center">Contact Us</h1>
         <div class="rowforflip d-flex flex-wrap justify-content-center pb-4">
             <div class="flipbox m-3 p-0">
