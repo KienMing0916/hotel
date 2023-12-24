@@ -38,11 +38,11 @@
         </div>
         <!-- title and introduction -->
         <div class="title">
-            <h1 class="text-white pt-5 pb-4 px-5 d-flex justify-content-center text-center"><i>Welcome to Celestial Oasis Hotel</i></h1>
-            <p class="text-white my-4 px-5">Escape to Celestial Oasis Hotel, a haven in Malaysia where luxury and tranquility unite. Our meticulously designed rooms and suites offer a blend of comfort and sophistication, ensuring an extraordinary stay. Immerse yourself in celestial experiences, from dining in our exquisite restaurants to indulging in our swimming pool and gym room. Whether for business or leisure, discover a sanctuary where every moment is a journey beyond the ordinary.</p>
+            <h1 class="text-white pt-5 pb-0 px-5 d-flex justify-content-center text-center">Welcome to Celestial Oasis Hotel</h1>
+            <p class="text-white my-4 pb-4 px-5" id="subtitle">Escape to Celestial Oasis Hotel, a haven in Malaysia where luxury and tranquility unite. Our meticulously designed rooms and suites offer a blend of comfort and sophistication, ensuring an extraordinary stay. Immerse yourself in celestial experiences, from dining in our exquisite restaurants to indulging in our swimming pool and gym room. Whether for business or leisure, discover a sanctuary where every moment is a journey beyond the ordinary.</p>
         </div>
         <!-- partthree room type -->
-        <h1 class="text-white my-4 d-flex justify-content-center"><i>Room Types</i></h1>
+        <h1 class="text-white my-4 d-flex justify-content-center">Room Types</h1>
         <div class="d-flex flex-wrap justify-content-center mb-5">
             <div class="card m-3">
                 <img class="card-img-top" src="img/room1.jpg" alt="Card image cap">
@@ -72,12 +72,12 @@
             </div>
         </div>
         <!-- partfivecontact -->
-        <h1 class="text-white my-4 d-flex justify-content-center"><i>Contact Us</i></h1>
+        <h1 class="text-white my-4 d-flex justify-content-center">Contact Us</h1>
         <div class="rowforflip d-flex flex-wrap justify-content-center pb-4">
             <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
-                        <img src="img/call.png" alt="" width="80px">
+                        <img src="img/call.png" alt="" width="50px">
                         <h5>Call Us</h5>
                     </div>
                     <div class="flipbox-back d-flex  flex-column justify-content-center align-items-center">
@@ -92,7 +92,7 @@
             <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
-                        <img src="img/email.png" alt="" width="80px">
+                        <img src="img/email.png" alt="" width="50px">
                         <h5>Send Us An Email</h5>
                     </div>
                     <div class="flipbox-back d-flex  flex-column justify-content-center align-items-center">
@@ -107,7 +107,7 @@
             <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
-                        <img src="img/location.png" alt="" width="80px">
+                        <img src="img/location.png" alt="" width="50px">
                         <h5>Visit Us</h5>
                     </div>
                     <div class="flipbox-back d-flex  flex-column justify-content-center align-items-center">

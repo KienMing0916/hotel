@@ -1,3 +1,8 @@
+#subtitle{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .flipbox{
     box-sizing: border-box;
     border: double black 5px;
@@ -9,7 +14,7 @@
 }
 
 .card {
-    width: 400px;
+    width: 27%;
 }
 
 .longflip{
@@ -78,7 +83,7 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:780px) {
     .flipbox{
         width: 300px;
         height: 150px;
@@ -90,7 +95,7 @@
     }
 
     .flipbox img{
-        width: 60px;
+        width: 40px;
     }
 
     .flipbox-front h5, .flipbox-back h5{
@@ -98,7 +103,7 @@
     }
 
     .card {
-        width: 300px;
+        width: 60%;
     }
 }
 
@@ -109,7 +114,11 @@
     }
 
     .flipbox img{
-        width: 60px;
+        width: 45px;
+    }
+
+    .card {
+        width: 70%;
     }
 }
 
@@ -120,6 +129,10 @@
 
     .flipbox-front h5, .flipbox-back h5{
         font-size: 16px;
+    }
+
+    .card {
+        width: 75%;
     }
 }
 

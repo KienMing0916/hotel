@@ -16,7 +16,7 @@
                     <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="room.php">Accommodations</a>
+                    <a class="nav-link" href="room.php">Rooms</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="facility.php">Amenities</a>

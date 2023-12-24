@@ -25,7 +25,7 @@
                     <h6 class="text-uppercase fw-bold">Details</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
                     <p><a href="home.php" class="text-white nav-link">Home</a></p>
-                    <p><a href="room.php" class="text-white">Accommodations</a></p>
+                    <p><a href="room.php" class="text-white">Rooms</a></p>
                     <p><a href="facility.php" class="text-white">Amenities</a></p>
                     <p><a href="bookingform.php" class="text-white">Book Now</a></p>
                     <p><a href="contact.php" class="text-white">Contact</a></p>

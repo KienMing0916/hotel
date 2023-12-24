@@ -17,7 +17,7 @@
     <div class="container-fluid p-0 mb-0" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
         <!-- partone -->
         <div class="partonecontactinfo">
-            <h1 class="text-white pt-5 pb-4 px-5 d-flex justify-content-center text-center"><i>Contact Us for a Smooth Stay</i></h1>
+            <h1 class="text-white pt-5 pb-4 px-5 d-flex justify-content-center text-center">Contact Us for a Smooth Stay</h1>
             <p class="text-white mb-4 px-5 text-center">Let's get the conversation started.<br>Connect with Us &#8210; Your Gateway to Exceptional Service</p>
         </div>
         <!-- parttwo -->
@@ -46,7 +46,7 @@
             <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
-                        <img src="img/call.png" alt="" width="80px">
+                        <img src="img/call.png" alt="" width="50px">
                         <h5>Call Us</h5>
                     </div>
                     <div class="flipbox-back d-flex  flex-column justify-content-center align-items-center">
@@ -61,7 +61,7 @@
             <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
-                        <img src="img/email.png" alt="" width="80px">
+                        <img src="img/email.png" alt="" width="50px">
                         <h5>Send Us An Email</h5>
                     </div>
                     <div class="flipbox-back d-flex  flex-column justify-content-center align-items-center">
@@ -76,7 +76,7 @@
             <div class="flipbox m-3 p-0">
                 <div class="flipbox-inner text-center">
                     <div class="flipbox-front d-flex  flex-column justify-content-center align-items-center">
-                        <img src="img/location.png" alt="" width="80px">
+                        <img src="img/location.png" alt="" width="50px">
                         <h5>Visit Us</h5>
                     </div>
                     <div class="flipbox-back d-flex  flex-column justify-content-center align-items-center">
