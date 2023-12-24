@@ -12,8 +12,8 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <?php include 'menu/nav.php'; ?>
-
 
     <div class="container-fluid p-0 mb-0" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
         <!-- partone carousel -->
@@ -133,50 +133,6 @@
             </div>
         </div>
         <!-- About End -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- partfourcontact -->
         <h1 class="text-white my-4 d-flex justify-content-center">Contact Us</h1>
         <div class="rowforflip d-flex flex-wrap justify-content-center pb-4">
@@ -225,24 +181,10 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
     </div>
-
-    <!-- <div class="container-fluid p-0" style="background-color:#CBC3E3">
-        <p>gdasgafga</p>
-        <p>gdasgafga</p>
-        <p>gdasgafga</p>
-        <p>gdasgafga</p>
-        <p>gdasgafga</p>
-        <p class="m-0 testing">gdasgafga</p>
-    </div> -->
-
     <?php include 'menu/footer.php'; ?>
 
+    <script src="js/style.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
