@@ -27,13 +27,13 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/hotel1.jpg" alt="companyimg1">
+                    <img class="d-block w-100" src="img/hotel1.jpg" alt="hotelImage">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/hotel2.jpg" alt="companyimg2">
+                    <img class="d-block w-100" src="img/hotel2.jpg" alt="hotelImage">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/hotel3.jpg" alt="companyimg3">
+                    <img class="d-block w-100" src="img/hotel3.jpg" alt="hotelImage">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -94,7 +94,7 @@
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">100+</h2>
+                                        <h2 class="mb-1"><span data-toggle="counter-up">100</span>+</h2>
                                         <p class="mb-0">Rooms</p>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">200+</h2>
+                                        <h2 class="mb-1"><span data-toggle="counter-up">200</span>+</h2>
                                         <p class="mb-0">Staffs</p>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-gear fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">10+</h2>
+                                        <h2 class="mb-1"><span data-toggle="counter-up">10</span>+</h2>
                                         <p class="mb-0">Amenities</p>
                                     </div>
                                 </div>
@@ -140,7 +140,59 @@
             </div>
         </div>
         <!-- About End -->
-        <!-- partfourcontact -->
+        <!-- partfourtestimonial -->
+        <!-- Testimonial Start -->
+        <div class="container-fluid-xxl testimonial mt-2 mb-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel py-5">
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Impressed by the luxurious ambiance, attentive staff, and top-notch services. A memorable stay at your hotel!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Selina</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Outstanding facilities, from exquisite dining to impeccable rooms. Your commitment to quality shines through. Highly recommend!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Kevin</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Exceptional service, superb amenities, and a truly welcoming atmosphere. Our stay surpassed expectations. Will return for sure!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Marcus</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Kudos to your hotel for the outstanding quality and excellent facilities. A delightful experience that exceeded our expectations!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Janella</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partfivecontact -->
         <h1 class="text-white my-4 d-flex justify-content-center">Contact Us</h1>
         <div class="rowforflip d-flex flex-wrap justify-content-center pb-4">
             <div class="flipbox m-3 p-0">
@@ -189,56 +241,15 @@
             </div>
         </div>
     </div>
-    <!-- partfivetestimonial -->
-    <!-- Testimonial Start -->
-    <div class="container-xxl testimonial mt-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s" style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="owl-carousel testimonial-carousel py-5">
-                <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
-                        <div class="ps-3">
-                            <h6 class="fw-bold mb-1">Client Name</h6>
-                            <small>Profession</small>
-                        </div>
-                    </div>
-                    <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-                </div>
-                <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
-                        <div class="ps-3">
-                            <h6 class="fw-bold mb-1">Client Name</h6>
-                            <small>Profession</small>
-                        </div>
-                    </div>
-                    <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-                </div>
-                <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
-                        <div class="ps-3">
-                            <h6 class="fw-bold mb-1">Client Name</h6>
-                            <small>Profession</small>
-                        </div>
-                    </div>
-                    <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Newsletter Start -->
-    <div class="container newsletter pb-5 my-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row justify-content-center">
+    <div class="container-fluid newsletter p-5 m-0" data-wow-delay="0.1s" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
+        <div class="row justify-content-center wow fadeIn">
             <div class="col-lg-10 border rounded p-1">
                 <div class="border rounded text-center p-1">
                     <div class="bg-white rounded text-center p-5">
                         <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <input class="form-control w-100 py-3 px-4" type="text" placeholder="Enter your email">
                             <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
                         </div>
                     </div>
