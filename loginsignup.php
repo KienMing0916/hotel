@@ -10,65 +10,67 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
-<?php
-        function validateLogin() {
+    <?php
+    function validateLogin()
+    {
 
-            if($_POST) {
-                include 'config/database.php';
-    
-                $useraccountinput = $_POST['useraccount'];
-                $userpasswordinput = $_POST['password'];
-                $errorMessage = array();
-    
-                if(empty($useraccountinput)) {
-                    $errorMessage[] = "Please enter your username / email.";
+        if ($_POST) {
+            include 'config/database.php';
+
+            $useraccountinput = $_POST['useraccount'];
+            $userpasswordinput = $_POST['password'];
+            $errorMessage = array();
+
+            if (empty($useraccountinput)) {
+                $errorMessage[] = "Please enter your username / email.";
+            }
+
+            if (empty($userpasswordinput)) {
+                $errorMessage[] = "Please enter your password.";
+            }
+
+            if (!empty($errorMessage)) {
+                echo "<div class='alert alert-danger m-3'>";
+                foreach ($errorMessage as $displayErrorMessage) {
+                    echo $displayErrorMessage . "<br>";
                 }
-    
-                if(empty($userpasswordinput)) {
-                    $errorMessage[] = "Please enter your password.";
-                }
-    
-                if(!empty($errorMessage)) {
-                    echo "<div class='alert alert-danger m-3'>";
-                        foreach ($errorMessage as $displayErrorMessage) {
-                            echo $displayErrorMessage . "<br>";
-                        }
-                    echo "</div>";
-                }else {
-                    try {
-                        $query = "SELECT Customer_ID, password, status FROM customers WHERE username=:useraccount OR email=:useraccount";
-                        $stmt = $con->prepare($query);
-                        $stmt->bindParam(':useraccount', $useraccountinput);
-                        $stmt->execute();
-                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    
-                        if(!$row) {
-                            echo "<div class='alert alert-danger m-3'>Username or email not found.</div>";
-                            return;
-                        }
+                echo "</div>";
+            } else {
+                try {
+                    $query = "SELECT Customer_ID, password, status FROM customers WHERE username=:useraccount OR email=:useraccount";
+                    $stmt = $con->prepare($query);
+                    $stmt->bindParam(':useraccount', $useraccountinput);
+                    $stmt->execute();
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-                        if(!password_verify($userpasswordinput, $row['password'])) {
-                            echo "<div class='alert alert-danger m-3'>Password incorrect.</div>";
-                            return;
-                        }
-    
-                        if($row['status'] !== 'Active') {
-                            echo "<div class='alert alert-danger m-3'>". $row['status'] . " account.</div>";
-                            return;
-                        }
-    
-                        $_SESSION['Customer_ID'] = $row['Customer_ID'];
-                        header("Location: home.php");
-                        exit();
-                    }catch (PDOException $exception) {
-                        echo "<div class='alert alert-danger m-3'>ERROR: " . $exception->getMessage() . "</div>";
+                    if (!$row) {
+                        echo "<div class='alert alert-danger m-3'>Username or email not found.</div>";
+                        return;
                     }
-                }            
+
+                    if (!password_verify($userpasswordinput, $row['password'])) {
+                        echo "<div class='alert alert-danger m-3'>Password incorrect.</div>";
+                        return;
+                    }
+
+                    if ($row['status'] !== 'Active') {
+                        echo "<div class='alert alert-danger m-3'>" . $row['status'] . " account.</div>";
+                        return;
+                    }
+
+                    $_SESSION['Customer_ID'] = $row['Customer_ID'];
+                    header("Location: home.php");
+                    exit();
+                } catch (PDOException $exception) {
+                    echo "<div class='alert alert-danger m-3'>ERROR: " . $exception->getMessage() . "</div>";
+                }
             }
         }
-        validateLogin();
-        ?>
+    }
+    validateLogin();
+    ?>
 
 
 
@@ -137,6 +139,7 @@
         </div>
     </div>
 </body>
+<script src="js/style.js"></script>
 <script src="js/login.js"></script>
 
 </html>

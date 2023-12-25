@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <?php include 'menu/nav.php'; ?>
 
     <div class="container-fluid p-0 mb-0" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
@@ -36,7 +37,7 @@
                         <textarea id="message" name="message" rows="4" placeholder="Message" required=""></textarea>
                     </div>
                     <a href="mytravel.html">
-                        <button type="submit" class="buttonsend">SEND</button> 
+                        <button type="submit" class="buttonsend">SEND</button>
                     </a>
                 </form>
             </div>
@@ -97,6 +98,7 @@
 
     <?php include 'menu/footer.php'; ?>
 
+    <script src="js/style.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 

@@ -33,7 +33,6 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="company-dropdown">
                         <li><a class="dropdown-item" href="loginsignup.php">Login</a></li>
-                        <li><a class="dropdown-item" href="bookinghistory.php">Booking History</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                 </li>
