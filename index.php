@@ -1,3 +1,7 @@
+<?php
+include 'menu/validate_login.php';
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -20,7 +24,7 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <?php include 'menu/nav.php'; ?>
+    <?php include 'menu/nav.php'; ?>    
 
     <div class="container-fluid p-0 mb-0" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
         <!-- partone carousel -->
@@ -241,7 +245,7 @@
             </div>
         </div>
     </div>
-    <!-- Newsletter Start -->
+    <!-- part six Newsletter -->
     <div class="container-fluid newsletter p-5 m-0" data-wow-delay="0.1s" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
         <div class="row justify-content-center wow fadeIn">
             <div class="col-lg-10 border rounded p-1">
@@ -250,14 +254,14 @@
                         <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control w-100 py-3 px-4" type="text" placeholder="Enter your email">
-                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2 disabled">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Newsletter Start -->
+    <!-- Newsletter End -->
     </div>
 
     <?php include 'menu/footer.php'; ?>

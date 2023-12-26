@@ -1,3 +1,7 @@
+<?php
+include 'menu/validate_login.php';
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -26,7 +30,7 @@
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15937.936843093928!2d101.74260142331433!3d2.9630599154712707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdca2d474fa21d%3A0x97031f098fa832d0!2sSeksyen%209%20Bandar%20Baru%20Bangi%2C%2043650%20Bandar%20Baru%20Bangi%2C%20Selangor!5e0!3m2!1sen!2smy!4v1670144849022!5m2!1sen!2smy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="contactform">
                 <h3>Get In Touch</h3>
-                <form name="contact_form" action="#">
+                <form name="contact_form" action="https://formspree.io/f/myyrgavy" method="POST">
                     <div class="rowemail">
                         <input id="email" type="email" name="email" placeholder="Email" required>
                     </div>

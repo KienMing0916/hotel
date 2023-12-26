@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <nav id="mainNavigation" class="border-bottom">
     <div role="navigation">
         <div class="py-3 text-center border-bottom">
@@ -25,15 +27,27 @@
                     <a class="nav-link" href="bookingform.php">Book Now</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php" href="#">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="company-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Account
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="company-dropdown">
-                        <li><a class="dropdown-item" href="loginsignup.php">Login</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <?php
+                        // Check if the user is logged in
+                        if (empty($_SESSION['User_ID'])) {
+                            echo '<li><a class="dropdown-item" href="loginsignup.php">Login</a></li>';
+                        }else{
+                            echo '<li><a class="dropdown-item" href="?logout=true">Logout</a></li>';
+                        }
+                        // if ($userLogin === null) {
+                        //     echo '<li><a class="dropdown-item" href="loginsignup.php">Login</a></li>';
+                        // }
+                        // if ($userLogin !== null) {
+                        //     echo '<li><a class="dropdown-item" href="?logout=true">Logout</a></li>';
+                        // }
+                        ?>
                     </ul>
                 </li>
             </ul>

@@ -1,7 +1,7 @@
 <?php
 // used to connect to the database
 $host = "localhost";
-$db_name = "kienming916";
+$db_name = "hotel_reservation";
 $username = "kienming916";
 $password = ".b9uJm35qx0j00sX";
   

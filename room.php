@@ -1,3 +1,7 @@
+<?php
+include 'menu/validate_login.php';
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 
