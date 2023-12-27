@@ -23,11 +23,11 @@ include 'menu/validate_login.php';
     function validateLogin()
     {
         //for those who try to go to booking page without login
-        // $action = isset($_GET['action']) ? $_GET['action'] : "";
-        // if ($action == 'warning') {
-        //     echo "<div class='alert alert-danger m-4 mb-0'>You cannot book a hotel room without logging in to your account.</div>";
-        //     return;
-        // }
+        $action = isset($_GET['action']) ? $_GET['action'] : "";
+        if ($action == 'warning') {
+            echo "<div class='alert alert-danger m-4 mb-0'>Please login to an admin account to view this page.</div>";
+            return;
+        }
 
         if (isset($_POST['login'])) {
             include 'config/database.php';
@@ -73,9 +73,9 @@ include 'menu/validate_login.php';
                     }
 
                     $_SESSION['User_ID'] = $row['User_ID'];
-                    $_SESSION['role'] = $row['Role'];
+                    $_SESSION['Role'] = $row['Role'];
 
-                    if ($_SESSION['role'] === "user") {
+                    if ($_SESSION['Role'] === "user") {
                         header("Location: index.php");
                         exit();
                     } else {
