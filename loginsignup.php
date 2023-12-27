@@ -38,6 +38,10 @@ include 'menu/validate_login.php';
 
             if (empty($useraccountinput)) {
                 $errorMessage[] = "Please enter your email.";
+            } else {
+                if (!filter_var($useraccountinput, FILTER_VALIDATE_EMAIL)) {
+                    $errorMessage[] = "Invalid email format.";
+                }
             }
 
             if (empty($userpasswordinput)) {
@@ -75,7 +79,7 @@ include 'menu/validate_login.php';
                         header("Location: index.php");
                         exit();
                     } else {
-                        header("Location: admin.php");
+                        header("Location: booking_read.php");
                         exit();
                     }
                 } catch (PDOException $exception) {
@@ -139,6 +143,8 @@ include 'menu/validate_login.php';
                     if ($stmt->execute()) {
                         echo "<div class='alert alert-success m-4 mb-0'>Register successfully. You may login using registered account now.</div>";
                         $_POST = array();
+                        header("Location: loginsignup.php");
+                        exit();
                     } else {
                         echo "<div class='alert alert-danger m-4 mb-0'>Something went wrong. Unable to register.</div>";
                     }

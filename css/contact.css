@@ -3,7 +3,7 @@
     display: flex;
     width: 100%;
     position: relative;
-    background-color: #112D4E;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%);
 }
 
 #map{

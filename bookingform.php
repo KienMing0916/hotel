@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'menu/validate_login.php';
 
 if (empty($_SESSION['User_ID'])) {
@@ -31,7 +31,7 @@ if (empty($_SESSION['User_ID'])) {
         <h2 style="text-align: center;">Hotel Reservation Form</h2>
         <p style="text-align: center;">Book your stay with us</p>
 
-        <form action="#" method="post">
+        <form action="bookingform.php" method="post">
             <!-- Personal Information -->
             <div class="form-group two-in-one mt-5">
                 <div class="form-group">
@@ -91,17 +91,17 @@ if (empty($_SESSION['User_ID'])) {
             <!-- Check out and Check in Date -->
             <div class="form-group two-in-one">
                 <div class="form-group">
-                    <label for="checkInDate">Check-in Date</label>
-                    <input type="date" id="checkInDate" name="checkInDate" required>
+                    <label for="checkInDateTime">Check-in Date</label>
+                    <input type="datetime-local" id="checkInDateTime" name="checkInDateTime" required>
                 </div>
                 <div class="form-group">
-                    <label for="checkOutDate">Check-out Date</label>
-                    <input type="date" id="checkOutDate" name="checkOutDate" required>
+                    <label for="checkOutDateTime">Check-out Date</label>
+                    <input type="datetime-local" id="checkOutDateTime" name="checkOutDateTime" required>
                 </div>
             </div>
             <!-- Notes -->
             <div class="form-group">
-                <label for="notes">Notes</label>
+                <label for="notes">Special Request</label>
                 <textarea id="notes" name="notes" rows="5"></textarea>
             </div>
 
@@ -115,4 +115,5 @@ if (empty($_SESSION['User_ID'])) {
     <script src="js/style.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
+
 </html>
