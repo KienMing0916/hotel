@@ -29,10 +29,10 @@ include 'menu/logout.php';
 
         // for update status view
         if ($action == 'record_updated') {
-            echo "<div class='alert alert-success m-3 mx-5'>Booking record status was updated.</div>";
+            echo "<div class='alert alert-success m-3 mx-5 mt-0'>Booking status was updated.</div>";
         }
         if ($action == 'failed') {
-            echo "<div class='alert alert-danger m-3 mx-5'>Something went wrong. Booking record status update failed. Please try again later.</div>";
+            echo "<div class='alert alert-danger m-3 mx-5 mt-0'>Something went wrong. Booking record status update failed. Please try again later.</div>";
         }
 
         include 'config/database.php';
@@ -134,15 +134,6 @@ include 'menu/logout.php';
                     <td>Booking Status</td>
                     <td><?php echo htmlspecialchars($status, ENT_QUOTES);  ?></td>
                 </tr>
-
-
-
-
-
-
-
-
-
                 <tr>
                     <td></td>
                     <td>

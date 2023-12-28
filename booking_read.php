@@ -73,7 +73,12 @@ include 'menu/logout.php';
                 extract($row);
                 echo "<tr>";
                 echo "<td>{$Booking_ID}</td>";
-                echo "<td>{$Email}</td>";
+                // echo "<td>{$Email}</td>";
+                echo "<td>";
+                echo "<a href='mailto:" . htmlspecialchars($Email, ENT_QUOTES) . "' target='_blank' style='color: black; text-decoration: none;'>";
+                echo htmlspecialchars($Email, ENT_QUOTES);
+                echo "</a>";
+                echo "</td>";
                 echo "<td>{$Room_Type}</td>";
                 echo "<td>{$Guest_Num}</td>";
                 echo "<td>{$Check_In_DateTime}</td>";
@@ -82,7 +87,8 @@ include 'menu/logout.php';
 
                 echo "<td class='col-3'>";
                 echo "<a href='booking_read_one.php?id={$Booking_ID}' class='btn btn-info m-r-1em text-white mx-2'>Read</a>";
-                echo "<a href='booking_update.php?id={$Booking_ID}' class='btn btn-primary m-r-1em mx-2'>Update</a>";
+                echo "<a href='#' onclick='booking_update_confirm({$Booking_ID});'  class='btn btn-success mx-2'>Confirm</a>";
+                echo "<a href='#' onclick='booking_update_reject({$Booking_ID});'  class='btn btn-primary mx-2'>Reject</a>";
                 echo "<a href='#' onclick='booking_delete({$Booking_ID});'  class='btn btn-danger mx-2'>Delete</a>";
                 echo "</td>";
                 echo "</tr>";
@@ -91,7 +97,7 @@ include 'menu/logout.php';
             echo "</div>";
         } else {
             echo '<div class="p-3">
-                <div class="alert alert-danger">No records found.</div>
+                <div class="alert alert-danger m-4 my-0 mb-2">No booking record found.</div>
             </div>';
         }
         ?>
@@ -107,11 +113,26 @@ include 'menu/logout.php';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script type='text/javascript'>
     // confirm record deletion
-    function booking_delete(Booking_ID){
-        if (confirm('Are you sure to delete this booking record?')){
+    function booking_delete(Booking_ID) {
+        if (confirm('Are you sure to delete this booking record?')) {
             // if admin clicked ok, pass the id to booking_delete.php and execute the delete query
             window.location = 'booking_delete.php?id=' + Booking_ID;
         }
     }
-    </script>
+
+    function booking_update_confirm(Booking_ID) {
+        if (confirm('Are you sure to confirm this booking?')) {
+            // if admin clicked ok, pass the id and status to booking_update.php and execute the update query
+            window.location = 'booking_update.php?id=' + Booking_ID + '&status=Confirmed';
+        }
+    }
+
+    function booking_update_reject(Booking_ID) {
+        if (confirm('Are you sure to reject this booking?')) {
+            // if admin clicked ok, pass the id and status to booking_update.php and execute the update query
+            window.location = 'booking_update.php?id=' + Booking_ID + '&status=Rejected';
+        }
+    }
+</script>
+
 </html>

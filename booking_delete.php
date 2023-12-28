@@ -1,4 +1,6 @@
 <?php
+include 'menu/validate_admin.php';
+include 'menu/logout.php';
 include 'config/database.php';
 try {
     $id = isset($_GET['id']) ? $_GET['id'] :  die('ERROR: Record ID not found.');
