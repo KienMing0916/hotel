@@ -2,7 +2,7 @@
 include 'menu/validate_login.php';
 
 if (empty($_SESSION['User_ID'])) {
-    echo '<script>alert("You cannot book a hotel room without logging in to your account.");</script>';
+    echo '<script>alert("You cannot book a hotel room without logging in to an account.");</script>';
     echo '<script>window.location.href = "loginsignup.php";</script>';
     exit;
 }
