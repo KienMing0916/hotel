@@ -253,7 +253,7 @@ include 'menu/validate_login.php';
                     <div class="bg-white rounded text-center p-5">
                         <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control w-100 py-3 px-4" type="text" placeholder="Enter your email">
+                            <input class="form-control w-100 py-3 px-4" type="text" placeholder="Email">
                             <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2 disabled">Submit</button>
                         </div>
                     </div>
@@ -268,7 +268,7 @@ include 'menu/validate_login.php';
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

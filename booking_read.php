@@ -1,5 +1,6 @@
 <?php
 include 'menu/validate_admin.php';
+include 'menu/logout.php';
 ?>
 
 
@@ -16,12 +17,101 @@ include 'menu/validate_admin.php';
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <?php include 'menu/admin_nav.php'; ?>
+
+    <div class="container-fluid p-0 mb-0" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 125, 114, 1) 66%)">
+        <h1 class="text-white pt-5 pb-5 px-5 mb-0 text-center">Celestial Oasis Hotel - Booking List</h1>
+
+        <?php
+        include 'config/database.php';
+
+        $searchKeyword = isset($_GET['search']) ? $_GET['search'] : '';
+        $action = isset($_GET['action']) ? $_GET['action'] : "";
+        $query = "SELECT * FROM bookinglist";
+        if (!empty($searchKeyword)) {
+            $query .= " WHERE Email LIKE :keyword OR Booking_ID LIKE :keyword OR Room_Type LIKE :keyword OR Status LIKE :keyword";
+            $searchKeyword = "%{$searchKeyword}%";
+        }
+        $query .= " ORDER BY Booking_ID DESC";
+        $stmt = $con->prepare($query);
+        if (!empty($searchKeyword)) {
+            $stmt->bindParam(':keyword', $searchKeyword);
+        }
+
+        $stmt->execute();
+        $num = $stmt->rowCount();
+
+        echo '<div class="px-5 pb-1">
+            <form method="GET" action="">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="search" placeholder="Search keywords..." value="' . str_replace('%', '', $searchKeyword) . '">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form>
+        </div>';
+
+        if ($action == 'deleted') {
+            echo "<div class='alert alert-success m-3 mx-5'>Booking record was deleted.</div>";
+        }
+
+        if ($num > 0) {
+            echo "<div class='mx-5 py-4' style='overflow-x:auto;'>";
+            echo "<table class='table table-bordered table-striped'>"; //start table
+            echo "<tr>";
+            echo "<th>Booking_ID</th>";
+            echo "<th>Email</th>";
+            echo "<th>Room Type</th>";
+            echo "<th>Guest Number</th>";
+            echo "<th>Check-in Date and Time</th>";
+            echo "<th>Check-out Date and Time</th>";
+            echo "<th>Status</th>";
+            echo "<th>Action</th>";
+            echo "</tr>";
+
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                extract($row);
+                echo "<tr>";
+                echo "<td>{$Booking_ID}</td>";
+                echo "<td>{$Email}</td>";
+                echo "<td>{$Room_Type}</td>";
+                echo "<td>{$Guest_Num}</td>";
+                echo "<td>{$Check_In_DateTime}</td>";
+                echo "<td>{$Check_Out_DateTime}</td>";
+                echo "<td>{$Status}</td>";
+
+                echo "<td class='col-3'>";
+                echo "<a href='booking_read_one.php?id={$Booking_ID}' class='btn btn-info m-r-1em text-white mx-2'>Read</a>";
+                echo "<a href='booking_update.php?id={$Booking_ID}' class='btn btn-primary m-r-1em mx-2'>Update</a>";
+                echo "<a href='#' onclick='booking_delete({$Booking_ID});'  class='btn btn-danger mx-2'>Delete</a>";
+                echo "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+            echo "</div>";
+        } else {
+            echo '<div class="p-3">
+                <div class="alert alert-danger">No records found.</div>
+            </div>';
+        }
+        ?>
+
+    </div>
 
 
-
-
+    <?php include 'menu/admin_footer.php'; ?>
 
 </body>
+<!-- js template -->
+<script src="js/style.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+<script type='text/javascript'>
+    // confirm record deletion
+    function booking_delete(Booking_ID){
+        if (confirm('Are you sure to delete this booking record?')){
+            // if admin clicked ok, pass the id to booking_delete.php and execute the delete query
+            window.location = 'booking_delete.php?id=' + Booking_ID;
+        }
+    }
+    </script>
 </html>

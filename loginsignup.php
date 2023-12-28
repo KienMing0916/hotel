@@ -22,7 +22,7 @@ include 'menu/validate_login.php';
     <?php
     function validateLogin()
     {
-        //for those who try to go to booking page without login
+        //for those who try to go to admin page without permission
         $action = isset($_GET['action']) ? $_GET['action'] : "";
         if ($action == 'warning') {
             echo "<div class='alert alert-danger m-4 mb-0'>Please login to an admin account to view this page.</div>";
@@ -222,7 +222,6 @@ include 'menu/validate_login.php';
 </body>
 <script src="js/style.js"></script>
 <script src="js/login.js"></script>
-<script src="js/style.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>

@@ -1,27 +1,22 @@
 <?php
-include 'menu/validate_admin.php';
+include 'config/database.php';
+try {     
+    $id=isset($_GET['id']) ? $_GET['id'] :  die('ERROR: Record ID not found.');
+    $status=isset($_GET['status']) ? $_GET['status'] :  die('ERROR: status not found.');
+    // update query
+    $updateStatusQuery = "UPDATE bookinglist SET status = ? WHERE  Booking_ID = ?";
+    $updateStmt = $con->prepare($updateStatusQuery);
+    $updateStmt->bindParam(1, $status);
+    $updateStmt->bindParam(2, $id);
+
+    if($updateStmt->execute()){
+        header('Location: booking_read_one.php?action=record_updated');
+    }else{
+        header('Location: booking_read_one.php?action=failed');
+    }
+}
+catch(PDOException $exception){
+    die('ERROR: ' . $exception->getMessage());
+}
 ?>
 
-
-<!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Celestial Oasis Hotel - Booking List</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <link href="css/nav.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c3573e9c36.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-
-
-
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-</html>
