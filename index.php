@@ -68,7 +68,7 @@ include 'menu/validate_login.php';
                 <img class="card-img-top" src="img/deluxesuite1.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Deluxe Suite</h5>
-                    <p class="card-text">Luxurious king-size bed, separate living area, and a private balcony with stunning views. Pamper yourself in the lavish bathroom, enjoy a minibar, smart TV, and room service.</p>
+                    <p class="card-text">Luxurious comfortable king-size bed, separate living area, and a private balcony with stunning views. Pamper yourself in the lavish bathroom, enjoy a minibar, smart TV, and room service.</p>
                     <a href="room.php#deluxeroom" class="btn btn-primary">View more</a>
                 </div>
             </div>
