@@ -28,12 +28,16 @@ include 'menu/logout.php';
 
         $searchKeyword = isset($_GET['search']) ? $_GET['search'] : '';
         $action = isset($_GET['action']) ? $_GET['action'] : "";
+        $sort = isset($_GET['sort']) ? $_GET['sort'] : "Booking_ID";
+        $order = isset($_GET['order']) ? $_GET['order'] : "DESC";
         $query = "SELECT * FROM bookinglist";
         if (!empty($searchKeyword)) {
             $query .= " WHERE Email LIKE :keyword OR Booking_ID LIKE :keyword OR Room_Type LIKE :keyword OR Status LIKE :keyword";
             $searchKeyword = "%{$searchKeyword}%";
         }
-        $query .= " ORDER BY Booking_ID DESC";
+        
+        $query .= " ORDER BY {$sort} {$order}";
+
         $stmt = $con->prepare($query);
         if (!empty($searchKeyword)) {
             $stmt->bindParam(':keyword', $searchKeyword);
@@ -49,6 +53,14 @@ include 'menu/logout.php';
                     <button class="btn btn-primary" type="submit">Search</button>
                 </div>
             </form>
+        </div>';
+
+        // Add sorting links
+        echo '<div class="px-5 pb-1">
+            <a href="?sort=Check_In_DateTime&order=ASC" class="btn btn-warning">Sort by Check-in Date Asc</a>
+            <a href="?sort=Check_In_DateTime&order=DESC" class="btn btn-warning">Sort by Check-in Date Desc</a>
+            <a href="?sort=Check_Out_DateTime&order=ASC" class="btn btn-warning">Sort by Check-out Date Asc</a>
+            <a href="?sort=Check_Out_DateTime&order=DESC" class="btn btn-warning">Sort by Check-out Date Desc</a>
         </div>';
 
         if ($action == 'deleted') {
