@@ -35,7 +35,7 @@ include 'menu/logout.php';
             $query .= " WHERE Email LIKE :keyword OR Booking_ID LIKE :keyword OR Room_Type LIKE :keyword OR Status LIKE :keyword";
             $searchKeyword = "%{$searchKeyword}%";
         }
-        
+
         $query .= " ORDER BY {$sort} {$order}";
 
         $stmt = $con->prepare($query);
@@ -50,6 +50,8 @@ include 'menu/logout.php';
             <form method="GET" action="">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" name="search" placeholder="Search keywords..." value="' . str_replace('%', '', $searchKeyword) . '">
+                    <input type="hidden" name="sort" value="' . htmlspecialchars($sort, ENT_QUOTES) . '">
+                    <input type="hidden" name="order" value="' . htmlspecialchars($order, ENT_QUOTES) . '">
                     <button class="btn btn-primary" type="submit">Search</button>
                 </div>
             </form>
@@ -57,10 +59,10 @@ include 'menu/logout.php';
 
         // Add sorting links
         echo '<div class="px-5 pb-1">
-            <a href="?sort=Check_In_DateTime&order=ASC" class="btn btn-warning">Sort by Check-in Date Asc</a>
-            <a href="?sort=Check_In_DateTime&order=DESC" class="btn btn-warning">Sort by Check-in Date Desc</a>
-            <a href="?sort=Check_Out_DateTime&order=ASC" class="btn btn-warning">Sort by Check-out Date Asc</a>
-            <a href="?sort=Check_Out_DateTime&order=DESC" class="btn btn-warning">Sort by Check-out Date Desc</a>
+            <a href="?search=' . str_replace('%', '', $searchKeyword) . '&sort=Check_In_DateTime&order=ASC" class="btn btn-warning">Sort by Check-in Date Asc</a>
+            <a href="?search=' . str_replace('%', '', $searchKeyword) . '&sort=Check_In_DateTime&order=DESC" class="btn btn-warning">Sort by Check-in Date Desc</a>
+            <a href="?search=' . str_replace('%', '', $searchKeyword) . '&sort=Check_Out_DateTime&order=ASC" class="btn btn-warning">Sort by Check-out Date Asc</a>
+            <a href="?search=' . str_replace('%', '', $searchKeyword) . '&sort=Check_Out_DateTime&order=DESC" class="btn btn-warning">Sort by Check-out Date Desc</a>
         </div>';
 
         if ($action == 'deleted') {

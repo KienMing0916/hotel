@@ -219,7 +219,8 @@ if (empty($_SESSION['User_ID'])) {
             <!-- Notes -->
             <div class="form-group">
                 <label for="special_request">Special Request</label>
-                <textarea id="notes" name="special_request" rows="5" value="<?php echo isset($_POST['special_request']) ? $_POST['special_request'] : ''; ?>"></textarea>
+                <textarea id="notes" name="special_request" rows="5"><?php echo isset($_POST['special_request']) ? htmlspecialchars($_POST['special_request']) : ''; ?></textarea>
+
             </div>
 
             <div class="form-group">
