@@ -167,7 +167,7 @@ include 'menu/validate_login.php';
     <div class="container-fluid mt-0 p-0">
         <?php include 'menu/nav.php'; ?>
 
-        <div class="wrapper mt-4">
+        <div class="wrapper my-4">
             <div class="scroll-container">
                 <div class="title-text">
                     <div class="title login">Login</div>
