@@ -32,6 +32,11 @@ include 'menu/validate_login.php';
             return;
         }
 
+        if ($action == 'success') {
+            echo "<div class='alert alert-success m-4 mb-0'>Register successfully. You may login using registered account now.</div>";
+            return;
+        }
+
         if (isset($_POST['login'])) {
             include 'config/database.php';
 
@@ -145,9 +150,8 @@ include 'menu/validate_login.php';
 
                     // Execute the query
                     if ($stmt->execute()) {
-                        echo "<div class='alert alert-success m-4 mb-0'>Register successfully. You may login using registered account now.</div>";
                         $_POST = array();
-                        header("Location: loginsignup.php");
+                        header("Location: loginsignup.php?action=success");
                         exit();
                     } else {
                         echo "<div class='alert alert-danger m-4 mb-0'>Something went wrong. Unable to register.</div>";
