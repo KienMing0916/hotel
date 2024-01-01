@@ -90,7 +90,7 @@ include 'menu/validate_login.php';
                     <div class="amenitiestitle px-3">
                         <h6 class="section-title text-start text-white text-uppercase">About Us</h6>
                         <h1 class="m-0 text-white">Explore Our <span class="text-white text-uppercase">Amenities</span></h1>
-                        <p class="my-3 text-white">Experience luxury and comfort with our hotel facilities - treat yourself to fine dining, relax in the gym and enjoy unparalleled service.</p>
+                        <p id="amenitiesdes" class="my-3 text-white">Experience luxury and comfort with our hotel facilities - treat yourself to fine dining, relax in the gym and enjoy unparalleled service.</p>
                     </div>
                     <div class="col-xl-6 px-3" id="amenities1">
                         <div class="row g-3 pb-4">
