@@ -8,6 +8,7 @@ include 'menu/validate_login.php';
 <head>
     <title>Celestial Oasis Hotel - Login or sign up</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="css/login.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,8 @@ include 'menu/validate_login.php';
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <?php
+    $formAction = "login";
+
     function validateLogin()
     {
         //for those who try to go to admin page without permission
@@ -89,6 +92,7 @@ include 'menu/validate_login.php';
         }
 
         if (isset($_POST['signup'])) {
+            $GLOBALS['formAction'] = "signup";
             include 'config/database.php';
             try {
                 $query = "INSERT INTO users SET Email=:email, Password=:password, Role=:role";
@@ -160,14 +164,14 @@ include 'menu/validate_login.php';
                 }
             }
         }
-    }
+    };
     validateLogin();
     ?>
 
     <div class="container-fluid mt-0 p-0">
         <?php include 'menu/nav.php'; ?>
 
-        <div class="wrapper my-4">
+        <div id="login-signup-wrapper" class="<?php echo $formAction === "login" ? "login-visible" : "signup-visible" ?> my-4">
             <div class="scroll-container">
                 <div class="title-text">
                     <div class="title login">Login</div>
@@ -175,39 +179,40 @@ include 'menu/validate_login.php';
                 </div>
                 <div class="form-container">
                     <div class="slide-controls">
-                        <input type="radio" name="slide" id="login" checked>
-                        <input type="radio" name="slide" id="signup">
+                        <input type="radio" name="slide" id="login" hidden <?php if ($formAction === "login") echo "checked" ?>>
+                        <input type="radio" name="slide" id="signup" hidden <?php if ($formAction === "signup") echo "checked" ?>>
                         <label for="login" class="slide login">Login</label>
                         <label for="signup" class="slide signup">Sign up</label>
                         <div class="slider-tab"></div>
                     </div>
                     <div class="form-inner">
-                        <form method="POST" action="loginsignup.php" class="login">
+                        <form method="POST" action="loginsignup.php" id="login-form">
                             <div class="field">
-                                <input type="text" placeholder="Email Address" id="useraccount" name="useraccount" value="<?php echo isset($_POST['useraccount']) ? $_POST['useraccount'] : ''; ?>" required>
+                                <input type="text" placeholder="Email Address" id="useraccount" name="useraccount" value="<?php echo isset($_POST['useraccount']) ? $_POST['useraccount'] : ''; ?>" >
                             </div>
                             <div class="field">
-                                <input type="password" placeholder="Password" id="password" name="password" required>
+                                <input type="password" placeholder="Password" id="password" name="password" >
                             </div>
-                            <div class="pass-link"><a href="#">Forgot password?</a></div>
-                            <div class="field btn">
+                            <div class="my-4"></div>
+                            <!-- <div class="pass-link"><a href="#">Forgot password?</a></div> -->
+                            <div class="field submit-btn btn">
                                 <div class="btn-layer"></div>
                                 <input type="submit" name="login" value="Login">
                             </div>
-                            <div class="signup-link">Not a member? <a href="">Sign up now</a></div>
+                            <div class="signup-link">Not a member? <button type="button" class="btn btn-link p-0 align-bottom">Sign up now</button></div>
                         </form>
 
-                        <form method="POST" action="loginsignup.php" class="signup">
+                        <form method="POST" action="loginsignup.php" id="signup-form">
                             <div class="field">
-                                <input type="text" placeholder="Email Address" name="email" id="email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>" required>
+                                <input type="text" placeholder="Email Address" name="email" id="email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>" >
                             </div>
                             <div class="field">
-                                <input type="password" placeholder="Password" name="password" id="password" required>
+                                <input type="password" placeholder="Password" name="password" id="password" >
                             </div>
                             <div class="field">
-                                <input type="password" placeholder="Confirm password" name="confirm_password" id="confirm_password" required>
+                                <input type="password" placeholder="Confirm password" name="confirm_password" id="confirm_password" >
                             </div>
-                            <div class="field btn">
+                            <div class="field submit-btn btn">
                                 <div class="btn-layer"></div>
                                 <input type="submit" name="signup" value="Sign up">
                             </div>

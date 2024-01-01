@@ -172,7 +172,7 @@ include 'menu/validate_login.php';
                         <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
                     </div>
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Exceptional service, superb amenities, and a truly welcoming atmosphere. Our stay surpassed expectations. Will return for sure!</p>
+                        <p>Exceptional service and a truly welcoming atmosphere. Our stay surpassed expectations. Will return for sure!</p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
