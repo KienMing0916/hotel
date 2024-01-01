@@ -7,10 +7,10 @@
             <span>Get connected with us on social medias:</span>
         </div>
         <div>
-            <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white me-4"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+            <a href="mailto: celestialoasis@gmail.com" target="_blank" class="text-white me-4"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
     <!-- Section links  -->
