@@ -56,7 +56,7 @@ include 'menu/validate_login.php';
         <h1 class="text-white my-5 d-flex justify-content-center">Room Types</h1>
         <div class="d-flex flex-wrap justify-content-center mb-5">
             <div class="card m-3">
-                <img class="card-img-top" src="img/standardroom1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/standardroom2.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Standard Room</h5>
                     <p class="card-text">Comfortable queen-size bed, ensuite bathroom, and workspace. Enjoy modern amenities like a flat-screen TV, high-speed Wi-Fi, and a coffee maker. Ideal for business and leisure travelers.</p>
@@ -150,7 +150,7 @@ include 'menu/validate_login.php';
             <div class="container">
                 <div class="owl-carousel testimonial-carousel py-5">
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Impressed by the luxurious ambiance, attentive staff, and top-notch services. A memorable stay at your hotel!</p>
+                        <p>Really impressed by the luxurious ambiance, attentive staff, and top-notch services. A memorable stay at your hotel!!!</p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">

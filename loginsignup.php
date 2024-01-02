@@ -179,7 +179,7 @@ include 'menu/validate_login.php';
             <div class="scroll-container">
                 <div class="title-text">
                     <div class="title login">Login</div>
-                    <div class="title signup">Signup</div>
+                    <div class="title signup">Sign up</div>
                 </div>
                 <div class="form-container">
                     <div class="slide-controls">

@@ -55,16 +55,16 @@
     color: white;
     border: none;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 10px;
     padding: 1rem 2rem;
-    background-color: #204e51;
+    background: rgba(34,125,114,1);
     cursor:pointer;
     margin-top: 1rem;
 }
 
 .buttonsend:hover{
-    background-image:linear-gradient(to right, #76a4a1, #0d7567);  
+    background-color: rgb(14, 71, 64);
 }
 
 .flipbox{

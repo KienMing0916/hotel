@@ -41,7 +41,7 @@ include 'menu/validate_login.php';
                         <textarea id="message" name="message" rows="4" placeholder="Message" required=""></textarea>
                     </div>
                     <a href="mytravel.html">
-                        <button type="submit" class="buttonsend">SEND</button>
+                        <button type="submit" class="buttonsend"><b>Send</b></button>
                     </a>
                 </form>
             </div>
