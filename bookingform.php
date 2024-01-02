@@ -80,8 +80,11 @@ if (empty($_SESSION['User_ID'])) {
                 $errorMessage[] = "Please select a room type.";
             }
             if (empty($guest_num)) {
-                $errorMessage[] = "Please enter number of people staying.";
+                $errorMessage[] = "Please enter the number of people staying.";
+            }else if ($guest_num < 1 || $guest_num > 10) {
+                $errorMessage[] = "Number of people staying must be between 1 and 10.";
             }
+
             if (empty($check_in_datetime)) {
                 $errorMessage[] = "Please enter your check-in date and time.";
             } else {
@@ -202,7 +205,7 @@ if (empty($_SESSION['User_ID'])) {
                 </div>
                 <div class="form-group">
                     <label for="guest_num">Number of Guests</label>
-                    <input type="number" id="guest_num" name="guest_num" min="1" max="10" step="1" value="<?php echo isset($_POST['guest_num']) ? $_POST['guest_num'] : ''; ?>">
+                    <input type="number" id="guest_num" name="guest_num" min="1" max="10" step="1" value="<?php echo isset($_POST['guest_num']) ? $_POST['guest_num'] : '1'; ?>">
                 </div>
             </div>
             <!-- Check out and Check in Date -->
