@@ -128,7 +128,7 @@ if (empty($_SESSION['User_ID'])) {
 
                 if ($stmt->execute()) {
                     //record saved
-                    echo "<div class='alert alert-success m-4 mb-0'>Reservation form submitted successfully! Please kindly wait for the processing time and check your email for futher instructions.</div>";
+                    echo "<div class='alert alert-success m-4 mb-0'>Reservation form submitted successfully! Please kindly wait for the processing time and check your email for further instructions.</div>";
                     $_POST = array();
                 } else {
                     echo "<div class='alert alert-danger m-3'>Something went wrong. Reservation form submission failed. Please try again later or contact support for assistance.</div>";
