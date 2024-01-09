@@ -154,7 +154,7 @@ include 'menu/validate_login.php';
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <h6 class="fw-bold mb-1">Customer Name</h6>
                                 <small>Selina</small>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ include 'menu/validate_login.php';
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <h6 class="fw-bold mb-1">Customer Name</h6>
                                 <small>Kevin</small>
                             </div>
                         </div>
@@ -176,7 +176,7 @@ include 'menu/validate_login.php';
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <h6 class="fw-bold mb-1">Customer Name</h6>
                                 <small>Marcus</small>
                             </div>
                         </div>
@@ -187,7 +187,7 @@ include 'menu/validate_login.php';
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <h6 class="fw-bold mb-1">Customer Name</h6>
                                 <small>Janella</small>
                             </div>
                         </div>
