@@ -198,7 +198,6 @@ include 'menu/validate_login.php';
                                 <input type="password" placeholder="Password" id="password" name="password" >
                             </div>
                             <div class="my-4"></div>
-                            <!-- <div class="pass-link"><a href="#">Forgot password?</a></div> -->
                             <div class="field submit-btn btn">
                                 <div class="btn-layer"></div>
                                 <input type="submit" name="login" value="Login">
